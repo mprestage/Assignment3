@@ -1,7 +1,6 @@
 .bookBtnLrg{
     width: 429px;
     height:66px;
-    align-items: center;
     border: none;
 }
 
@@ -12,5 +11,5 @@
 }
 
 #fictionBook {
-    background-image: url(images/menuFiction.svg);
+    background-image: url(Assignment3/images/menuFiction.svg);
 }

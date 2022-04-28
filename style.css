@@ -1,3 +1,8 @@
+.bookBtnLrg{
+    width: 429px;
+    height:66px;
+}
+
 #fictionBook {
     background-image: url(menuFiction.svg);
 }

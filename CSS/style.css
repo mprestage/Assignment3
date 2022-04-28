@@ -13,3 +13,11 @@
 #fictionBook {
     background-image: url(/images/menuFiction.svg);
 }
+
+#romanceBook {
+    background-image: url(/images/menuRomance.svg);
+}
+
+#scifiBook {
+    background-image: url(/images/menuSciFi.svg);
+}

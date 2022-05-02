@@ -1,3 +1,10 @@
+.homemenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .bookBtnLrg{
     width: 429px;
     height:66px;

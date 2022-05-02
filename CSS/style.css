@@ -26,3 +26,36 @@
     background-image: url(/Assignment3/images/menuHorror.svg);
 }
 
+#modernBook {
+    background-image: url(/Assignment3/images/menuModern.svg);
+}
+
+#youngAdultBook {
+    background-image: url(/Assignment3/images/menuYA.svg);
+}
+
+#nonFictionBook {
+        background-image: url(/Assignment3/images/menuNonFiction.svg);
+}
+
+#scienceBook {
+        background-image: url(/Assignment3/images/menuScience.svg);
+}
+
+#homeBook {
+        background-image: url(/Assignment3/images/menuHG.svg);
+}
+
+#historyBook {
+        background-image: url(/Assignment3/images/menuHistory.svg);
+}
+
+#bioBook {
+        background-image: url(/Assignment3/images/menuBio.svg);
+}
+
+#artBook {
+    background-image: url(/Assignment3/images/menuArt.svg);
+}
+
+        

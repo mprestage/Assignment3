@@ -11,14 +11,18 @@
 }
 
 #fictionBook {
-    background-image: url(/images/menuFiction.svg);
+    background-image: url(/Assignment3/images/menuFiction.svg);
 }
 
 #romanceBook {
-    background-image: url(/images/menuRomance.svg);
+    background-image: url(/Assignment3/images/menuRomance.svg);
 }
 
 #scifiBook {
-    background-image: url(/images/menuSciFi.svg);
+    background-image: url(/Assignment3/images/menuSciFi.svg);
+}
+
+#horrorBook {
+    background-image: url(/Assignment3/images/menuHorror.svg);
 }
 

@@ -16,15 +16,29 @@ header {
     padding: 27px;
 }
 
-.search {
-    border-width: 0px;
+.searchbox {
     background-color: #F5EADD;
     width: 234px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchinput {
+    border-width: 0px;
+    background-color: #F5EADD;
+    width: 180px;
     height: 44px;
 }
 
-.search:focus-visible {
+.searchinput:focus-visible {
     outline: solid 2px #CEBAA1;
+}
+
+.searchicon {
+    width: 28px;
+    height: 28px;
+    padding: 9px;
 }
 
 .homemenu {

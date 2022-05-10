@@ -12,6 +12,12 @@ header {
     align-items: center;
 }
 
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #970000;
+}
+
 .logo {
     padding: 27px;
 }

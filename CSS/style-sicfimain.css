@@ -2,6 +2,8 @@ body{
     background-color: #FFF7EE;
     margin: 0px;
     display: grid;
+    grid-template-columns: 252px auto auto auto auto auto;
+    column-gap: 24px;
 }
 
 header {
@@ -11,6 +13,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .logo {
     padding-top: 37px;
@@ -61,8 +65,24 @@ header {
     padding-bottom: 35px;
     padding-right: 20px;
 }
+.productgrid {
+    padding-top: 155px;
+    }
+
+h1 {
+     font-family: 'Josefin Sans';
+ }
 
 .productcard {
     width: 204px;
     height: 366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 2;
+}
+
+.productimg {
+    width: 75%;
+    height: 60%;
 }

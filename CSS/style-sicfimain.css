@@ -1,6 +1,7 @@
 body{
     background-color: #FFF7EE;
     margin: 0px;
+    display: grid;
 }
 
 header {
@@ -44,6 +45,7 @@ header {
 .mainmenu {
     background-color: #FFF;
     width: 253px;
+    height: 814px;
 }
 
 .mainmenu > ul{
@@ -58,4 +60,9 @@ header {
     text-align: right;
     padding-bottom: 35px;
     padding-right: 20px;
+}
+
+.productcard {
+    width: 204px;
+    height: 366px;
 }

@@ -85,4 +85,38 @@ h1 {
 .productimg {
     width: 75%;
     height: 60%;
+    border-radius: 12px;
+}
+
+.cardbooktitle{
+    font-family: 'Josefin Sans';
+    font-size: 18pt;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    color: #970000;
+}
+
+.cardauthor {
+    font-family: 'Josefin Sans';
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    color: #DD6363;
+    text-align: center;
+}
+
+.cardprice {
+    font-family: 'Josefin Sans';
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #970000;
+    text-align: center;
+    align-content: center;
+    align-self: flex-end;
+    display: inline-block;
 }

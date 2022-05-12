@@ -1,8 +1,8 @@
 body{
     background-color: #FFF7EE;
     margin: 0px;
-    display: grid;
-    grid-template-columns: 252px auto auto auto auto auto;
+    display: flex;
+    /* grid-template-columns: 252px auto auto auto auto auto; */
     column-gap: 24px;
 }
 
@@ -66,8 +66,8 @@ header {
     padding-right: 20px;
 }
 .productgrid {
-    padding-top: 155px;
-    grid-column-start: 2;
+    padding-top: 135px;
+    display: flex;
     }
 
 h1 {
@@ -85,9 +85,10 @@ h1 {
 }
 
 .productimg {
-    width: 75%;
-    height: 60%;
+    width: 73%;
+    height: 57%;
     border-radius: 12px;
+    margin-top: 10%;
 }
 
 .cardbooktitle{
@@ -123,4 +124,10 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 35%;
+}
+
+.productcard:hover {
+    background: #FFF7EE;
+    box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
+    border-radius: 24px;
 }

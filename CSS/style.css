@@ -75,12 +75,12 @@ h1 {
 
 #romanceBook {
     background-image: url(/images/menuRomance.svg);
-    transform: translate(2rem, 0);
+    transform: translate(0.5rem, 0);
 }
 
 #scifiBook {
     background-image: url(/images/menuSciFi.svg);
-    transform: translate(1rem, 0);
+    transform: translate(-1rem, 0);
 }
 
 #horrorBook {
@@ -90,6 +90,7 @@ h1 {
 
 #modernBook {
     background-image: url(/images/menuModern.svg);
+    transform: translate(-1.5rem, 0);
 }
 
 #youngAdultBook {
@@ -102,32 +103,30 @@ h1 {
 
 #scienceBook {
     background-image: url(/images/menuScience.svg);
+    transform: translate(1rem, 0);
 }
 
 #homeBook {
     background-image: url(/images/menuHG.svg);
+    transform: translate(-2rem, 0);
 }
 
 #historyBook {
     background-image: url(/images/menuHistory.svg);
+    transform: translate(0.5rem, 0);
 }
 
 #bioBook {
     background-image: url(/images/menuBio.svg);
+    transform: translate(-1rem, 0);
 }
 
 #artBook {
     background-image: url(/images/menuArt.svg);
 }
 
-button#romanceBook {
-    /* transform: translate3d(100px, 100px); */
-
-    /* transform: scale(1.2, 1); */
-}
-
 .bookBtnSml:hover {
-    margin-left: 5rem;
+    margin-left: 2rem;
     transition: all 500ms ease-in-out;
     cursor: pointer;
 }
@@ -137,7 +136,7 @@ button#romanceBook {
     cursor: pointer;
 }
 .bookBtnLrg:hover {
-    margin-left: 5rem;
+    margin-left: 2rem;
     transition: all 500ms ease-in-out;
     cursor: pointer;
 }

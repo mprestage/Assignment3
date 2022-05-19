@@ -2,7 +2,6 @@ body{
     background-color: #FFF7EE;
     margin: 0px;
     display: flex;
-    /* grid-template-columns: 252px auto auto auto auto auto; */
     column-gap: 24px;
 }
 
@@ -13,8 +12,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 .logo {
     padding-top: 37px;
@@ -58,13 +55,24 @@ header {
     font-weight: 400;
     font-size: 20pt;
     color: #D10000;
+    padding-inline-start: 0;
 }
 
 .mainmenu > ul > li {
     text-align: right;
-    padding-bottom: 35px;
-    padding-right: 20px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 10%;
+    width: 90%;
+
 }
+
+.mainmenu > ul > li:hover {
+    background-color: #CEBAA1;
+    color: #970000;
+}
+
+
 .productgrid {
     padding-top: 135px;
     display: flex;

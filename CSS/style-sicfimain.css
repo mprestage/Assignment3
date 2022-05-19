@@ -8,7 +8,7 @@ body{
 header {
     background-color: #FFF;
     width: 253px;
-    height: 211px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,20 +68,27 @@ header {
 }
 
 .mainmenu > ul > li:hover {
-    background-color: #CEBAA1;
+    background-color: #F5EADD;
     color: #970000;
 }
 
 
 .productgrid {
-    padding-top: 135px;
+    padding-top: 10rem;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
 
 h1 {
      font-family: 'Josefin Sans';
      color: #970000;
  }
+
+.breadcrumb{
+    display: flex;
+    width: 100%;
+}
 
 .productcard {
     width: 204px;

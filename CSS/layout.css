@@ -1,3 +1,5 @@
+
+/* items for all pages */
 body{
     margin: 0px;
     display: flex;
@@ -5,7 +7,6 @@ body{
 }
 
 header {
-    width: 20rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -54,10 +55,13 @@ header {
     padding-top: 0.7rem;
     padding-right: 10%;
     width: 90%;
-
+}
+.breadcrumb{
+    display: flex;
+    width: 100%;
 }
 
-
+/* item for main product page */
 
 .productgrid {
     padding-top: 9rem;
@@ -66,15 +70,9 @@ header {
     flex-wrap: wrap;
     }
 
-
-.breadcrumb{
-    display: flex;
-    width: 100%;
-}
-
 .productcard {
     width: 12rem;
-    height: 22rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,11 +80,20 @@ header {
     margin-right: 1rem;
 }
 
+
 .productimg {
-    width: 73%;
+    width: 70%;
     height: 57%;
     border-radius: 12px;
     margin-top: 10%;
+}
+
+.cartproductimg {
+    width: 22%;
+    height: 88%;
+    border-radius: 12px;
+    margin-left: 1rem;
+    margin-right: 3rem;
 }
 
 .cardbooktitle{
@@ -123,4 +130,23 @@ header {
 .productcard.expand {
     width: 80%;
     height: 22rem;
+}
+
+/* items for cart page */
+
+.cart {
+    padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cartcard {
+            width: 42rem;
+            height: 17rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            margin-right: 1rem;
 }

@@ -42,6 +42,12 @@ h1 {
      color: #970000;
  }
 
+.cartcard {
+    background-color:#F5EADD;
+    box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
+    border-radius: 24px;
+}
+
 .cardbooktitle{
     font-family: 'Josefin Sans';
     font-size: 16pt;

@@ -7,21 +7,21 @@ body{
 
 header {
     background-color: #FFF;
-    width: 253px;
-    height: 100%;
+    width: 20rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .logo {
-    padding-top: 37px;
-    padding-bottom: 54px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .searchbox {
     background-color: #F5EADD;
-    width: 234px;
-    height: 46px;
+    width: 15rem;
+    height: 3rem;
     display: flex;
     flex-direction: row;
 }
@@ -38,15 +38,16 @@ header {
 }
 
 .searchicon {
-    width: 28px;
-    height: 28px;
-    padding: 9px;
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    padding-left: 5%;
 }
 
 .mainmenu {
     background-color: #FFF;
-    width: 253px;
-    height: 814px;
+    width: 16rem;
+    height: 100%;
 }
 
 .mainmenu > ul{
@@ -60,8 +61,8 @@ header {
 
 .mainmenu > ul > li {
     text-align: right;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
     padding-right: 10%;
     width: 90%;
 
@@ -74,7 +75,7 @@ header {
 
 
 .productgrid {
-    padding-top: 10rem;
+    padding-top: 9rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,8 +92,8 @@ h1 {
 }
 
 .productcard {
-    width: 204px;
-    height: 366px;
+    width: 12rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +109,7 @@ h1 {
 
 .cardbooktitle{
     font-family: 'Josefin Sans';
-    font-size: 18pt;
+    font-size: 16pt;
     font-weight: 600;
     text-align: center;
     margin-top: 7%;
@@ -118,7 +119,7 @@ h1 {
 
 .cardauthor {
     font-family: 'Josefin Sans';
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 400;
     margin-top: 0%;
     margin-bottom: 3%;

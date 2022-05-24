@@ -1,0 +1,71 @@
+body{
+    background-color: #FFF7EE;
+}
+
+header {
+    background-color: #FFF;
+}
+
+
+.searchbox {
+    background-color: #F5EADD;
+}
+
+.searchinput {
+    background-color: #F5EADD;
+}
+
+.searchinput:focus-visible {
+    outline: solid 2px #CEBAA1;
+}
+
+
+.mainmenu {
+    background-color: #FFF;
+}
+
+.mainmenu > ul{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20pt;
+    color: #D10000;
+}
+
+.mainmenu > ul > li:hover {
+    background-color: #F5EADD;
+    color: #970000;
+}
+
+
+h1 {
+     font-family: 'Josefin Sans';
+     color: #970000;
+ }
+
+.cardbooktitle{
+    font-family: 'Josefin Sans';
+    font-size: 16pt;
+    font-weight: 600;
+    color: #970000;
+
+}
+
+.cardauthor {
+    font-family: 'Josefin Sans';
+    font-size: 14pt;
+    font-weight: 400;
+    color: #DD6363;
+}
+
+.cardprice {
+    font-family: 'Josefin Sans';
+    font-size: 16pt;
+    font-weight: 400;
+    color: #970000;
+}
+
+.productcard:hover {
+    background: #FFF7EE;
+    box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
+    border-radius: 24px;
+}

@@ -1,25 +1,23 @@
 body{
-    background-color: #FFF7EE;
     margin: 0px;
     display: flex;
     column-gap: 24px;
 }
 
 header {
-    background-color: #FFF;
     width: 20rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .logo {
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
 .searchbox {
-    background-color: #F5EADD;
     width: 15rem;
     height: 3rem;
     display: flex;
@@ -28,14 +26,10 @@ header {
 
 .searchinput {
     border-width: 0px;
-    background-color: #F5EADD;
     width: 180px;
     height: 44px;
 }
 
-.searchinput:focus-visible {
-    outline: solid 2px #CEBAA1;
-}
 
 .searchicon {
     width: 2rem;
@@ -45,17 +39,12 @@ header {
 }
 
 .mainmenu {
-    background-color: #FFF;
     width: 16rem;
     height: 100%;
 }
 
 .mainmenu > ul{
     list-style-type: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 20pt;
-    color: #D10000;
     padding-inline-start: 0;
 }
 
@@ -68,10 +57,6 @@ header {
 
 }
 
-.mainmenu > ul > li:hover {
-    background-color: #F5EADD;
-    color: #970000;
-}
 
 
 .productgrid {
@@ -81,10 +66,6 @@ header {
     flex-wrap: wrap;
     }
 
-h1 {
-     font-family: 'Josefin Sans';
-     color: #970000;
- }
 
 .breadcrumb{
     display: flex;
@@ -109,36 +90,24 @@ h1 {
 }
 
 .cardbooktitle{
-    font-family: 'Josefin Sans';
-    font-size: 16pt;
-    font-weight: 600;
     text-align: center;
     margin-top: 7%;
     margin-bottom: 3%;
-    color: #970000;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
 .cardauthor {
-    font-family: 'Josefin Sans';
-    font-size: 14pt;
-    font-weight: 400;
     margin-top: 0%;
     margin-bottom: 3%;
-    color: #DD6363;
     text-align: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
 .cardprice {
-    font-family: 'Josefin Sans';
-    font-size: 16pt;
-    font-weight: 400;
     margin-top: 3%;
     margin-bottom: 3%;
-    color: #970000;
     text-align: center;
     align-content: center;
     align-self: flex-end;
@@ -148,8 +117,6 @@ h1 {
 }
 
 .productcard:hover {
-    background: #FFF7EE;
-    box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
     border-radius: 24px;
 }
 

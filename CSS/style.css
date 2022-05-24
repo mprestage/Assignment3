@@ -1,12 +1,12 @@
-body{
+.landingbody{
     background-color: #FFF7EE;
     margin: 0px;
 }
 
-header {
+.landingheader {
     background-color: #FFF;
-    width: 253px;
-    height: 211px;
+    width: 16rem;
+    height: 22vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,14 +19,14 @@ h1 {
 }
 
 .logo {
-    padding-top: 37px;
-    padding-bottom: 54px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .searchbox {
     background-color: #F5EADD;
-    width: 234px;
-    height: 46px;
+    width: 15rem;
+    height: 3rem;
     display: flex;
     flex-direction: row;
 }
@@ -43,9 +43,10 @@ h1 {
 }
 
 .searchicon {
-    width: 28px;
-    height: 28px;
-    padding: 9px;
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    padding-left: 5%;
 }
 
 .homemenu {

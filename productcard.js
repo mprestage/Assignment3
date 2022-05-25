@@ -1,5 +1,5 @@
-productcard.getElementById("targetcard").addEventListener("click", toggleExpand)
+document.getElementById("targetcard").addEventListener("click", toggleExpand);
 
 function toggleExpand() {
-    productcard.toggle("expand")
+    productcard.classList.toggle("expand")
     }

@@ -24,7 +24,7 @@
                 <li>Browse</li>
                 <li>Contact</li>
                 <li>Booklists</li>
-                <li>Cart</li>
+                <li class="selected-page">Cart</li>
             </ul>
         </nav>
     </header>  
@@ -33,12 +33,29 @@
         <div class="breadcrumb"><h1>Shopping Cart</h1></div>     
         <span class="cartcard">
             <img class="cartproductimg" src="/images/Morgenstern.jpg">
-            <span>
-                <h2 class="cardbooktitle">The Starless Sea</h2>
-                <h3 class="cardauthor">Erin Morgenstern</h3>
-                <h4 class="cardprice">$22.99</h4>
+            <span class="cart-info">
+                <h2 class="cart-cardbooktitle">The Starless Sea</h2>
+                <h3 class="cart-cardauthor">Erin Morgenstern</h3>
+                <h4 class="cart-cardprice">$22.99</h4>
+                <h4 class="cart-qty">Qty:</h4>
+                <h4 class="qty-amount">1</h4>
+                <!-- <button class="cart-button">Add to Cart</button> -->
             </span>
+            <img class="close-icon" src="/images/CloseIcon.svg">
         </span>
+        <span class="cart-totals">
+            <table>
+                <tr>
+                    <td>The Starless Sea</td>
+                    <td>$22.99</td>
+                </tr>
+                <tr>
+                    <td>Sub Total</td>
+                    <td>$22.99</td>
+                </tr>
+        </span>
+        <button class="back-btn">Back to Browse</button>
+        <button class="checkout-btn">Checkout</button>
     </div>
 </body>
 </html>

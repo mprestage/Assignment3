@@ -1,5 +1,18 @@
+:root {
+    --primary-font: 'Josefin Sans', sans-serif;
+    --secondary-light: #FFF7EE;
+    --seconday: #F5EADD;
+    --secondary-dark: #EDDFCF;
+    --tertiary: #CEBAA1;
+    --primary: #D10000;
+    --primary-dark: #970000;
+    --pramary-light: #DD6363;
+
+
+}
+
 body{
-    background-color: #FFF7EE;
+    background-color: var(--secondary-light);
 }
 
 header {
@@ -8,11 +21,11 @@ header {
 
 
 .searchbox {
-    background-color: #F5EADD;
+    background-color: var(--seconday);
 }
 
 .searchinput {
-    background-color: #F5EADD;
+    background-color: var(--seconday);
 }
 
 .searchinput:focus-visible {
@@ -32,7 +45,7 @@ header {
 }
 
 .mainmenu > ul > li:hover {
-    background-color: #F5EADD;
+    background-color: var(--seconday);
     color: #970000;
 }
 
@@ -42,11 +55,6 @@ h1 {
      color: #970000;
  }
 
-.cartcard {
-    background-color:#F5EADD;
-    box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
-    border-radius: 24px;
-}
 
 .cardbooktitle{
     font-family: 'Josefin Sans';
@@ -74,4 +82,83 @@ h1 {
     background: #FFF7EE;
     box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
     border-radius: 24px;
+}
+
+
+/* Cart page items */
+
+.selected-page{
+    background-color: #CEBAA1;
+    color: #970000;
+}
+
+.cartcard {
+    background-color: var(--seconday);
+    box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
+    border-radius: 24px;
+}
+
+.cart-cardbooktitle{
+    font-family: 'Josefin Sans';
+    font-size: 16pt;
+    font-weight: 600;
+    color: #970000;
+
+}
+
+.cart-cardauthor {
+    font-family: 'Josefin Sans';
+    font-size: 14pt;
+    font-weight: 400;
+    color: #DD6363;
+}
+
+.cart-cardprice {
+    font-family: 'Josefin Sans';
+    font-size: 16pt;
+    font-weight: 400;
+    color: #970000;
+}
+
+.cart-button {
+    font-family: 'Josefin Sans';
+    font-size: 14pt;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #D10000;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.cart-button:hover {
+    background-color: #970000;
+}
+
+.cart-totals {
+    background-color: #CEBAA1;
+    box-shadow: inset 0px 0px 5px #846D50;
+    border-radius: 24px;
+}
+
+.checkout-btn {
+    font-family: 'Josefin Sans';
+    font-size: 14pt;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #D10000;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.back-btn {
+    font-family: 'Josefin Sans';
+    font-size: 14pt;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #D10000;
+    border-radius: 12px;
+    outline: none;
+    border: none;
 }

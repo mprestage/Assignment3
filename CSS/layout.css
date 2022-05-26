@@ -180,9 +180,15 @@ header {
     padding-top: 2rem;
 }
 
-.cart-button {
+.qty-amount {
     padding: 0.5rem;
+    width: 5%;
+    text-align: center;
 }
+
+/* .cart-button {
+    padding: 0.5rem;
+} */
 
 .close-icon {
     width: 2rem;
@@ -196,16 +202,23 @@ header {
     align-self: flex-end;
 }
 
+td{
+    padding: 1rem;
+}
+
 .checkout-btn {
     padding-top: 0.7rem;
     padding-left: 3rem;
     padding-bottom: 0.7rem;
     padding-right: 3rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
 }
 .back-btn{
     padding-top: 0.7rem;
     padding-left: 1.5rem;
     padding-bottom: 0.7rem;
     padding-right: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
 }

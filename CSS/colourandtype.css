@@ -1,7 +1,7 @@
 :root {
     --primary-font: 'Josefin Sans', sans-serif;
     --secondary-light: #FFF7EE;
-    --seconday: #F5EADD;
+    --secondary: #F5EADD;
     --secondary-dark: #EDDFCF;
     --tertiary: #CEBAA1;
     --primary: #D10000;
@@ -21,15 +21,15 @@ header {
 
 
 .searchbox {
-    background-color: var(--seconday);
+    background-color: var(--secondary);
 }
 
 .searchinput {
-    background-color: var(--seconday);
+    background-color: var(--secondary);
 }
 
 .searchinput:focus-visible {
-    outline: solid 2px #CEBAA1;
+    outline: solid 2px var(--tertiary);
 }
 
 
@@ -41,26 +41,31 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 20pt;
-    color: #D10000;
+    color: var(--primary)
 }
 
 .mainmenu > ul > li:hover {
-    background-color: var(--seconday);
-    color: #970000;
+    background-color: var(--secondary);
+    color: var(--primary-dark);
 }
 
 
 h1 {
      font-family: 'Josefin Sans';
-     color: #970000;
+     color: var(--primary-dark);
  }
+
+h4 {
+    font-family: 'Josefin Sans';
+    color: var(--primary-dark);
+}
 
 
 .cardbooktitle{
     font-family: 'Josefin Sans';
     font-size: 16pt;
     font-weight: 600;
-    color: #970000;
+    color: var(--primary-dark);
 
 }
 
@@ -68,14 +73,14 @@ h1 {
     font-family: 'Josefin Sans';
     font-size: 14pt;
     font-weight: 400;
-    color: #DD6363;
+    color: var(--pramary-light);
 }
 
 .cardprice {
     font-family: 'Josefin Sans';
     font-size: 16pt;
     font-weight: 400;
-    color: #970000;
+    color: var(--primary-dark);
 }
 
 .productcard:hover {
@@ -89,11 +94,11 @@ h1 {
 
 .selected-page{
     background-color: #CEBAA1;
-    color: #970000;
+    color: var(--primary-dark);
 }
 
 .cartcard {
-    background-color: var(--seconday);
+    background-color: var(--secondary);
     box-shadow: 0px 0px 5px rgba(55, 76, 10, 0.4);
     border-radius: 24px;
 }
@@ -102,7 +107,7 @@ h1 {
     font-family: 'Josefin Sans';
     font-size: 16pt;
     font-weight: 600;
-    color: #970000;
+    color: var(--primary-dark);
 
 }
 
@@ -110,35 +115,45 @@ h1 {
     font-family: 'Josefin Sans';
     font-size: 14pt;
     font-weight: 400;
-    color: #DD6363;
+    color: var(--pramary-light);
 }
 
 .cart-cardprice {
     font-family: 'Josefin Sans';
     font-size: 16pt;
     font-weight: 400;
-    color: #970000;
+    color: var(--primary-dark);
 }
 
-.cart-button {
+.qty-amount{
+    background-color: var(--secondary-light);
+    border-radius: 8px;
+}
+
+/* .cart-button {
     font-family: 'Josefin Sans';
     font-size: 14pt;
     font-weight: 400;
     color: #FFF;
-    background-color: #D10000;
+    background-color: var(--primary);
     border-radius: 12px;
     outline: none;
     border: none;
 }
 
 .cart-button:hover {
-    background-color: #970000;
-}
+    background-color: var(--primary-dark);
+} */
 
 .cart-totals {
-    background-color: #CEBAA1;
+    background-color: var(--tertiary);
     box-shadow: inset 0px 0px 5px #846D50;
     border-radius: 24px;
+}
+
+table{
+    color: var(--primary-dark);
+    font-family: var(--primary-font);
 }
 
 .checkout-btn {
@@ -146,7 +161,7 @@ h1 {
     font-size: 14pt;
     font-weight: 400;
     color: #FFF;
-    background-color: #D10000;
+    background-color: var(--primary);
     border-radius: 12px;
     outline: none;
     border: none;
@@ -156,9 +171,18 @@ h1 {
     font-family: 'Josefin Sans';
     font-size: 14pt;
     font-weight: 400;
-    color: #FFF;
-    background-color: #D10000;
+    color: var(--primary);
+    background-color: var(--secondary-dark);
     border-radius: 12px;
     outline: none;
     border: none;
+}
+
+tr {
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.totals {
+    font-weight: 600;
 }

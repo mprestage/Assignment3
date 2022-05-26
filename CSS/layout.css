@@ -79,6 +79,7 @@ header {
     align-items: center;
     position: relative;
     margin-right: 1rem;
+    transition: all 2000ms linear;
 }
 
 
@@ -126,6 +127,15 @@ header {
     opacity: 0%;
 }
 
+.product-close-icon {
+    opacity: 0%;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .productcard:hover {
     border-radius: 24px;
 }
@@ -134,21 +144,23 @@ header {
     width: 45rem;
     height: 20rem;
     flex-direction: row;
+    transition: all 2000ms linear;
 }
 
 .productcard.expand > .productimg {
-    width: 45%;
-    height: 63%;
+    width: 30%;
+    height: 88%;
     border-radius: 12px;
     margin-top: 1.2rem;
     margin-left: 1.6rem;
     align-self: flex-start;
+    align-content: center;
 }
 
 .productcard.expand > .card-text {
     align-self: flex-start;
     padding-top: 1rem;
-    width: 20rem;
+    
 }
 
 .productcard.expand > .card-text > .cardbooktitle {
@@ -171,22 +183,31 @@ header {
     margin-bottom: 3%;
     text-align: left;
     padding-top: 2rem;
-    position: relative;
-    align-self: flex-start;
+    position: absolute;
+    bottom: 10rem;
+    left: 16rem;
 }
 
 .productcard.expand > .card-text > .cart-button {
     opacity: 100%;
     scale: 100%;
     padding: 0.5rem;
-    margin: 1rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 16rem;
 }
 
-.productcard.expand > .product-discription {
+.productcard.expand > .card-text > .product-discription {
     opacity: 100%;
-    align-self: flex-end;
+    position: absolute;
+    bottom: 3rem;
+    left: 16rem;
+    padding-right: 2rem;
 }
 
+.productcard.expand > .product-close-icon {
+    opacity: 100%;
+}
 
 
 
@@ -254,10 +275,6 @@ header {
     text-align: center;
 }
 
-/* .cart-button {
-    padding: 0.5rem;
-} */
-
 .close-icon {
     width: 2rem;
     height: 2rem;
@@ -267,7 +284,9 @@ header {
 }
 
 .cart-totals {
-    align-self: flex-end;
+    position: absolute;
+    top: 14rem;
+    right: 4rem;
 }
 
 td{
@@ -276,17 +295,19 @@ td{
 
 .checkout-btn {
     padding-top: 0.7rem;
-    padding-left: 3rem;
+    padding-left: 2.6rem;
     padding-bottom: 0.7rem;
-    padding-right: 3rem;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
+    padding-right: 2.6rem;
+    position: absolute;
+    right: 4rem;
+    bottom: 23rem;
 }
 .back-btn{
     padding-top: 0.7rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-bottom: 0.7rem;
-    padding-right: 1.5rem;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
+    padding-right: 1rem;
+    position: absolute;
+    right: 15rem;
+    bottom: 23rem;
 }

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="productcard.js"></script>
+    
 </head>
 <body>
     <header>
@@ -39,9 +39,15 @@
 
          <span class="productcard" id="targetcard" onclick="toggleExpand">
             <img class="productimg" src="/images/Morgenstern.jpg">
-            <h2 class="cardbooktitle">The Starless Sea</h2>
-            <h3 class="cardauthor">Erin Morgenstern</h3>
-            <h4 class="cardprice">$22.99</h4>
+            <span class="card-text">
+               <h2 class="cardbooktitle">The Starless Sea</h2>
+               <h3 class="cardauthor">Erin Morgenstern</h3>
+               <h4 class="cardprice">$22.99</h4>
+               <a class="cart-button">Add to Cart</a>
+               </span>
+               <p class="product-discription">
+                  When Zachary Rawlins stumbles across a strange book hidden in his university library it leads him on a quest unlike any other.
+               </p>
          </span>
 
          <span class="productcard">
@@ -100,5 +106,6 @@
             <h4 class="cardprice">$19.99</h4>
          </span>
     </div>
+   <script src="productcard.js"></script>
 </body>
 </html>

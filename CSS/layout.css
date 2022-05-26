@@ -183,8 +183,9 @@ header {
     margin: 1rem;
 }
 
-.productcard.expand > .card-text > .product-discription {
+.productcard.expand > .product-discription {
     opacity: 100%;
+    align-self: flex-end;
 }
 
 

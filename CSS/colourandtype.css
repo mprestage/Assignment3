@@ -299,3 +299,12 @@ select {
 select:focus-visible {
     outline-color: var(--tertiary);
 }
+
+.payment-form > input {
+    background-color: var(--secondary);
+    border: none;
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    color: var(--primary-dark);
+    border-radius: 12px;
+}

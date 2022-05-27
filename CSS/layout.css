@@ -315,16 +315,17 @@ td{
     padding: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 
 label.state{
-    padding-left: 8.2rem;
+    padding-left: 9.2rem;
 
 }
 
 label.postcode{
-    padding-left: 10.7rem;
+    padding-left: 11.7rem;
 
 }
 
@@ -358,15 +359,15 @@ label.postcode{
 }
 
 #name {
-    width: 93%;
+    width: 90%;
 }
 
 #address1 {
-    width: 93%;
+    width: 90%;
 }
 
 #address2 {
-    width: 93%;
+    width: 90%;
 }
 
 .shipping-type > input {
@@ -414,3 +415,25 @@ select {
 option {
     padding-top: 2px;
 }
+
+.payment-form {
+    position: absolute;
+    left: 18rem;
+    top: 14rem;
+}
+
+.payment-form > input {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+#card-name {
+    width: 90%;
+}
+
+label.ccv {
+    padding-left: 12.5rem;
+}
+

@@ -8,7 +8,7 @@ body{
 
 header {
     height: 100vh;
-    width: 20rem;
+    width: 16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,15 +21,9 @@ header {
 
 .searchbox {
     width: 15rem;
-    height: 3rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
-}
-
-.searchinput {
-    border-width: 0px;
-    width: 180px;
-    height: 44px;
 }
 
 
@@ -37,7 +31,8 @@ header {
     width: 2rem;
     height: 2rem;
     align-self: center;
-    padding-left: 5%;
+    position: absolute;
+    left: 12rem;
 }
 
 .mainmenu {
@@ -129,8 +124,8 @@ header {
 
 .product-close-icon {
     opacity: 0%;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -148,7 +143,7 @@ header {
 }
 
 .productcard.expand > .productimg {
-    width: 30%;
+    width: 26%;
     height: 88%;
     border-radius: 12px;
     margin-top: 1.2rem;
@@ -160,6 +155,7 @@ header {
 .productcard.expand > .card-text {
     align-self: flex-start;
     padding-top: 1rem;
+    padding-left: 1.5rem;
     
 }
 
@@ -168,14 +164,13 @@ header {
     margin-top: 7%;
     margin-bottom: 3%;
     align-self: start;
-    padding-left: 1rem;
 }
 
 .productcard.expand > .card-text > .cardauthor {
     margin-top: 0%;
     margin-bottom: 3%;
     text-align: left;
-    padding-left: 1rem;
+
 }
 
 .productcard.expand > .card-text > .cardprice {
@@ -185,7 +180,7 @@ header {
     padding-top: 2rem;
     position: absolute;
     bottom: 10rem;
-    left: 16rem;
+    left: 15.5rem;
 }
 
 .productcard.expand > .card-text > .cart-button {
@@ -194,14 +189,14 @@ header {
     padding: 0.5rem;
     position: absolute;
     bottom: 8rem;
-    left: 16rem;
+    left: 15.5rem;
 }
 
 .productcard.expand > .card-text > .product-discription {
     opacity: 100%;
     position: absolute;
     bottom: 3rem;
-    left: 16rem;
+    left: 15.5rem;
     padding-right: 2rem;
 }
 
@@ -276,10 +271,10 @@ header {
 }
 
 .close-icon {
-    width: 2rem;
-    height: 2rem;
-    padding-left: 3%;
-    padding-top: 3%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
     align-self: flex-start;
 }
 
@@ -300,8 +295,9 @@ td{
     padding-right: 2.6rem;
     position: absolute;
     right: 4rem;
-    bottom: 23rem;
+    top: 22.5rem;
 }
+
 .back-btn{
     padding-top: 0.7rem;
     padding-left: 1rem;
@@ -309,5 +305,112 @@ td{
     padding-right: 1rem;
     position: absolute;
     right: 15rem;
-    bottom: 23rem;
+    top: 22.5rem;
+}
+
+
+/* Checkout page items */
+
+.delivery-details > input {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+label.state{
+    padding-left: 8.2rem;
+
+}
+
+label.postcode{
+    padding-left: 10.7rem;
+
+}
+
+.delivery-details {
+    position: absolute;
+    left: 18rem;
+    top: 14rem;
+}
+
+.checkout-info {
+    position: relative;
+}
+
+.progress-btn {
+    padding-top: 0.7rem;
+    padding-left: 2.6rem;
+    padding-bottom: 0.7rem;
+    padding-right: 2.6rem;
+    position: absolute;
+    right: 4.2rem;
+    top: 22.5rem;
+    cursor: pointer;
+}
+
+.checkout-form {
+    padding-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#name {
+    width: 93%;
+}
+
+#address1 {
+    width: 93%;
+}
+
+#address2 {
+    width: 93%;
+}
+
+.shipping-type > input {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.shipping-type {
+    padding-left: 0.5rem;
+    padding-top: 0.4rem;
+}
+
+
+.payment-btn {
+    padding-top: 0.7rem;
+    padding-left: 2.6rem;
+    padding-bottom: 0.7rem;
+    padding-right: 2.6rem;
+    position: absolute;
+    right: 4.2rem;
+    top: 30rem;
+    cursor: pointer;
+}
+
+.back-btn2{
+    padding-top: 0.7rem;
+    padding-left: 3.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 3.7rem;
+    position: absolute;
+    right: 15rem;
+    top: 30rem;
+}
+
+select {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+option {
+    padding-top: 2px;
 }

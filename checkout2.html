@@ -28,24 +28,22 @@
             </ul>
         </nav>
     </header>  
-    
-    <form>
-        <label for="name">Full Name</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="address1">Address Line 1</label><br>
-        <input type="text" id="address1" name="address1"><br>
-        <label for="address2">Address Line 2</label><br>
-        <input type="text" id="address2" name="address2"><br>
-        <label for="suburb">Town/Suburb</label>
-        <label for="state">State</label><br>
-        <input type="text" id="suburb" name="suburb">
-        <input type="text" id="state" name="state"><br>
-        <label for="country">Country</label>
-        <label for="postcode">Postcode</label> <br>
-        <input type="text" id="country" name="country">
-        <input type="text" id="postcode" name="postcode">
-        <a href="/checkout2.html"><input type="submit" value="Checkout" class="checkout-btn"></a>
-    </form>
+
+    <div class="checkout-form">
+        <div class="breadcrumb">
+            <h1>Checkout</h1>
+            <h2>Step 2 of 3</h2>
+        </div>   
+
+        <form class="shipping-type">
+            <label for="shipping">Shipping</label><br>
+            <select id="shipping" name="shipping">
+                <option value="express">Express Shipping</option>
+                <option value="standard">Standard Shipping</option>
+            </select>
+
+            <a href="/checkout2.html"><input type="submit" value="Checkout" class="checkout-btn"></a>
+        </form>
 
 
 
@@ -59,10 +57,19 @@
                     <td>Sub Total</td>
                     <td>$22.99</td>
                 </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$ 8.99</td>
+                </tr>
+                <tr class="totals">
+                    <td>Total</td>
+                    <td>$31.98</td>
+                </tr>
             </table>
         </span>
         <span>
-            <a href="/scifimain.html" class="back-btn">Back to Browse</a>
+            <a href="/checkout1.html" class="back-btn2">Back</a>
+            <a href="/checkout3.html"><input type="submit" value="Payment" class="payment-btn"></a>
         </span>
     </div>
 </body>

@@ -26,10 +26,12 @@ header {
 
 .searchinput {
     background-color: var(--secondary);
+    border: none;
 }
 
 .searchinput:focus-visible {
     outline: solid 2px var(--tertiary);
+    outline-offset: -3px;
 }
 
 
@@ -38,7 +40,7 @@ header {
 }
 
 .mainmenu > ul{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 20pt;
     color: var(--primary)
@@ -51,12 +53,12 @@ header {
 
 
 h1 {
-     font-family: 'Josefin Sans';
+     font-family: var(--primary-font);
      color: var(--primary-dark);
  }
 
 h4 {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     color: var(--primary-dark);
 }
 
@@ -69,7 +71,7 @@ p {
 
 
 .cardbooktitle{
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 16pt;
     font-weight: 600;
     color: var(--primary-dark);
@@ -77,14 +79,14 @@ p {
 }
 
 .cardauthor {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 14pt;
     font-weight: 400;
     color: var(--primary-light);
 }
 
 .cardprice {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 16pt;
     font-weight: 400;
     color: var(--primary-dark);
@@ -107,7 +109,7 @@ p {
 }
 
 .cart-button {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 14pt;
     font-weight: 400;
     color: #FFF;
@@ -140,7 +142,7 @@ p {
 }
 
 .cart-cardbooktitle{
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 16pt;
     font-weight: 600;
     color: var(--primary-dark);
@@ -148,14 +150,14 @@ p {
 }
 
 .cart-cardauthor {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 14pt;
     font-weight: 400;
     color: var(--primary-light);
 }
 
 .cart-cardprice {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 16pt;
     font-weight: 400;
     color: var(--primary-dark);
@@ -180,7 +182,7 @@ table{
 }
 
 .checkout-btn {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 14pt;
     font-weight: 400;
     color: #FFF;
@@ -192,7 +194,7 @@ table{
 }
 
 .back-btn {
-    font-family: 'Josefin Sans';
+    font-family: var(--primary-font);
     font-size: 14pt;
     font-weight: 400;
     color: var(--primary);
@@ -210,4 +212,90 @@ tr {
 
 .totals {
     font-weight: 600;
+}
+
+
+/* Checkout page items */
+.delivery-details > input {
+    background-color: var(--secondary);
+    border: none;
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    color: var(--primary-dark);
+    border-radius: 12px;
+}
+
+label {
+    font-family: var(--primary-font);
+    color: var(--tertiary);
+}
+
+h2 {
+    font-family: var(--primary-font);
+    color: var(--primary-light);
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.progress-btn {
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    font-weight: 400;
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.delivery-details > input:focus-visible {
+    outline-color: var(--tertiary);
+}
+
+
+.shipping-type > input {
+    background-color: var(--secondary);
+    border: none;
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    color: var(--primary-dark);
+    border-radius: 12px;
+}
+
+.payment-btn {
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    font-weight: 400;
+    color: #FFF;
+    background-color: var(--primary);
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.back-btn2 {
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    font-weight: 400;
+    color: var(--primary);
+    background-color: var(--secondary-dark);
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+select {
+    background-color: var(--secondary);
+    color: var(--primary-dark);
+    font-family: var(--primary-font);
+    font-size: 14pt;
+    border-radius: 12px;
+    border: none;
+}
+
+select:focus-visible {
+    outline-color: var(--tertiary);
 }

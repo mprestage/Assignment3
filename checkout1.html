@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powell's Books | SciFi & Fantasy</title>
+    <link rel="stylesheet" href="CSS/colourandtype.css">
+    <link rel="stylesheet" href="CSS/layout.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="productcard.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img class="logo" src="/images/PowellsRedLogo.svg" alt="Powell's Logo" width="199" height="63"></a>
+        <div class="searchbox">
+            <input class="searchinput" type="text" placeholder="">
+            <img class="searchicon" src="/images/SearchIcon.svg">
+        </div>
+        <nav class="mainmenu">
+            <ul>
+                <li>Browse</li>
+                <li>Contact</li>
+                <li>Booklists</li>
+                <li class="selected-page">Cart</li>
+            </ul>
+        </nav>
+    </header>  
+
+    <div class="checkout-form">    
+        <div class="breadcrumb">
+            <h1>Checkout</h1>
+            <h2>Step 1 of 3</h2>
+        </div>   
+        <form action='checkout2.html' method="GET"   class="delivery-details">
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="address1">Address Line 1</label><br>
+        <input type="text" id="address1" name="address1"><br>
+        <label for="address2">Address Line 2</label><br>
+        <input type="text" id="address2" name="address2"><br>
+        <label for="suburb">Town/Suburb</label>
+        <label class="state" for="state">State</label><br>
+        <input type="text" id="suburb" name="suburb">
+        <input type="text" id="state" name="state"><br>
+        <label for="country">Country</label>
+        <label class="postcode" for="postcode">Postcode</label> <br>
+        <input type="text" id="country" name="country">
+        <input type="text" id="postcode" name="postcode">
+        </form>
+
+
+
+           <span class="cart-totals">
+                <table>
+                    <tr>
+                        <td>The Starless Sea</td>
+                        <td>$22.99</td>
+                    </tr>
+                    <tr class="totals">
+                        <td>Sub Total</td>
+                        <td>$22.99</td>
+                     </tr>
+                </table>
+            </span>
+            <span>
+                <a href="/scifimain.html" class="back-btn">Back to Browse</a>
+                <a href="/checkout2.html"><input type="submit" value="Shipping" class="progress-btn"></a>
+            </span>
+
+    </div>
+</body>
+</html>

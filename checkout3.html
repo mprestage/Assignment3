@@ -37,13 +37,11 @@
 
         <form class="payment-form" action="/confirmation.html"   onsubmit="return validateForm()" method="GET">
             <label for="card-name">Name on Card</label><br>
-            <input type="text" id="card-name" name="card-name"><br>
+            <input type="text" id="card-name" name="card-name" required><br>
             <label for="expiry">Expiry</label>
             <label class="ccv" for="ccv">CCV</label><br>
             <input type="text" id="expiry" name="expiry">            
             <input type="text" id="ccv" name="ccv"><br>
-
-            <input type="submit" value="Confirm" class="payment-btn">
         </form>
 
 
@@ -70,7 +68,7 @@
         </span>
         <span>
             <a href="/checkout2.html" class="back-btn2">Back</a>
-            <a href="/confirmation.html"><input type="submit" value="Confirm" class="payment-btn"></a>
+            <a onclick="validatePayment()"><input type="submit" value="Confirm" class="payment-btn"></a>
         </span>
     </div>
     <script src="formvalidation.js"></script>

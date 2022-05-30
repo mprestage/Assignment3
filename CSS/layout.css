@@ -14,6 +14,13 @@ header {
     align-items: center;
 }
 
+.hamburger {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    min-width: 2rem;
+}
+
 .logo {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -21,9 +28,11 @@ header {
 
 .searchbox {
     width: 15rem;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
@@ -437,3 +446,68 @@ label.ccv {
     padding-left: 12.5rem;
 }
 
+
+
+/* media queries */
+
+@media (max-width: 850px) {
+    .hamburger {
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .landingheader {
+        background-color: #FFF;
+        width: 100%;
+        height: 14vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header {
+        height: 14vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #nav-wrapper {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2.5rem;
+    }
+
+
+    body {
+        flex-direction: column;
+    }
+
+    .productgrid {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+    
+    .productcard{
+         margin-right: 0rem;
+        }
+
+     h1 {
+         padding-left: 1.8rem;
+     }   
+
+     #nav-wrapper.expand {
+         display:flex;
+         position: absolute;
+         top: 15%;
+         flex-direction: column;
+         z-index: 10;
+     }
+}

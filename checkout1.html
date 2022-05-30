@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="productcard.js"></script>
 </head>
 <body>
     <header>
@@ -36,7 +35,7 @@
         </div>   
         <form action='checkout2.html' method="GET"   class="delivery-details">
         <label for="name">Full Name</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="text" id="name" name="name" required><br>
         <label for="address1">Address Line 1</label><br>
         <input type="text" id="address1" name="address1"><br>
         <label for="address2">Address Line 2</label><br>
@@ -67,9 +66,10 @@
             </span>
             <span>
                 <a href="/scifimain.html" class="back-btn">Back to Browse</a>
-                <a href="/checkout2.html"><input type="submit" value="Shipping" class="progress-btn"></a>
+                <a onclick="validateAddress()"><input type="submit" value="Shipping" class="progress-btn"></a>
             </span>
 
     </div>
+    <script src="formvalidation.js"></script>
 </body>
 </html>

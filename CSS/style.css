@@ -147,4 +147,41 @@ h1 {
     cursor: pointer;
 }
 
+.hamburger {
+    background-image: url(/images/HamburgerIcon.svg);
+    background-size: cover;
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    min-width: 2rem;
+}
+
+@media (max-width: 850px) {
+    .hamburger {
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .landingheader {
+        background-color: #FFF;
+        width: 100%;
+        height: 14vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .searchbox {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2.5rem;
+    }
+
+
+
+}
         

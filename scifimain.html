@@ -14,7 +14,9 @@
 </head>
 <body>
     <header>
+         <button class="hamburger" onclick="toggleNav()"></button>
         <a href="/index.html"><img class="logo" src="/images/PowellsRedLogo.svg" alt="Powell's Logo" width="199" height="63"></a>
+      <div id="nav-wrapper">
         <div class="searchbox">
             <input class="searchinput" type="text" placeholder="">
             <img class="searchicon" src="/images/SearchIcon.svg">
@@ -27,6 +29,8 @@
                 <li>Cart</li>
             </ul>
         </nav>
+      </div>
+
     </header>        
     <div class="productgrid">
         <div class="breadcrumb"><h1>Fiction  /  SciFi & Fantasy</h1></div>
@@ -109,5 +113,6 @@
          </span>
     </div>
    <script src="productcard.js"></script>
+   <script src="hamburger.js"></script>
 </body>
 </html>

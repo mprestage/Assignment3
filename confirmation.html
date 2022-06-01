@@ -10,8 +10,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <script src="productcard.js"></script>
 </head>
 <body>
-    <p>yay it worked</p>
+    <header>
+        <button class="hamburger" onclick="toggleNav()"></button>
+        <a href="/index.html"><img class="logo" src="/images/PowellsRedLogo.svg" alt="Powell's Logo" width="199" height="63"></a>
+        <div id="nav-wrapper">
+            <div class="searchbox">
+                <input class="searchinput" type="text" placeholder="">
+                <img class="searchicon" src="/images/SearchIcon.svg">
+            </div>
+            <nav class="mainmenu">
+                <ul>
+                    <li>Browse</li>
+                    <li>Contact</li>
+                    <li>Booklists</li>
+                    <li>Cart</li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    
+    <div class="cart"> 
+        <div class="breadcrumb"><h1>Order Confirmation</h1></div>     
+        <span class="cartcard">
+            <img class="cartproductimg" src="/images/Morgenstern.jpg">
+            <span class="cart-info">
+                <h2 class="cart-cardbooktitle">The Starless Sea</h2>
+                <h3 class="cart-cardauthor">Erin Morgenstern</h3>
+                <h4 class="cart-cardprice">$22.99</h4>
+                <h4 class="cart-qty">Qty: 1</h4>
+            </span>
+            <img class="close-icon" src="/images/CloseIcon.svg">
+        </span>
+
+        <span class="cart-totals">
+            <table>
+                <tr class="totals">
+                    <td>Sub Total</td>
+                    <td>$22.99</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$ 8.99</td>
+                </tr>
+                <tr class="totals">
+                    <td>Total</td>
+                    <td>$31.98</td>
+                </tr>
+            </table>
+            <p class="confirm-text">Payment Received</p>
+        </span>
+        <span>
+            <a href="/scifimain.html" class="back-btn3">Back to Browse</a>
+        </span>
+    </div>
+    <script src="hamburger.js"></script>
 </body>
+</html>

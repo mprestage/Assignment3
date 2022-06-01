@@ -133,13 +133,28 @@ p {
     text-decoration: none;
 }
 
+
 .cart-button:hover {
     background-color: var(--primary-dark);
 }
 
-.cart-button:active {
+.cart-button.used {
     background-color: white;
     color: var(--primary);
+}
+
+.close-product {
+    background-image: url(/images/CloseIcon.svg);
+    background-size: cover;
+    border: none;
+}
+
+#cart-notification {
+    background-color: var(--tertiary);
+}
+
+#cart-notification > p {
+    color: var(--primary-dark);
 }
 
 

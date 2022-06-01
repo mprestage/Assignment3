@@ -1,8 +1,16 @@
 productcard = document.getElementById("targetcard");
 
-function toggleExpand() {
-    console.log("working")
-    productcard.classList.toggle("expand")
-}
+closeicon = document.getElementsByClassName("close-product");
 
-document.getElementById("targetcard").onclick = toggleExpand
+function expandProduct() {
+    if  (!productcard.classList.contains('expand')) {
+        productcard.classList.add('expand')
+    }
+  }
+
+  function collapseProduct(event) {
+    event.stopPropagation();
+    if  (productcard.classList.contains('expand')) {
+        productcard.classList.remove('expand')
+    }
+  }

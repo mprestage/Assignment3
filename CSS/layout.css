@@ -134,7 +134,7 @@ header {
     scale: 0%;
 }
 
-.product-close-icon {
+.close-product {
     opacity: 0%;
     scale: 0%;
     width: 1.5rem;
@@ -218,10 +218,28 @@ header {
     padding-right: 2rem;
 }
 
-.productcard.expand > .product-close-icon {
+.productcard.expand > .close-product {
     opacity: 100%;
     scale: 100%;
 }
+
+#cart-notification {
+    visibility: hidden;
+    height: 0;
+    transition: height 1000ms ease-in-out;
+}
+
+#cart-notification > p {
+    max-height: 100%;
+    line-height: 100%;
+}
+
+#cart-notification.visible {
+    visibility: visible;
+    height: 40px;
+    width: 90%;
+}
+
 
 
 

@@ -11,10 +11,10 @@
   }
 
   function validatePayment() {
-    const ddForm = document.getElementsByClassName('payment-form')[0];
-    if (ddForm?.checkValidity()) {
+    const pForm = document.getElementsByClassName('payment-form')[0];
+    if (pForm?.checkValidity()) {
       window.location.href = "/confirmation.html";
     } else {
-      ddForm?.reportValidity();
+      pForm?.reportValidity();
     }
   }

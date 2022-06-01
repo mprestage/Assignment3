@@ -29,7 +29,12 @@
                 <li><a href="/cart.html">Cart</a> </li> 
             </ul>
         </nav>
+
       </div>
+      <span id="cart-notification">
+         <p>Item added!</p>
+      </span>
+
     </header>  
     
     
@@ -42,18 +47,18 @@
             <h4 class="cardprice">$22.99</h4>
          </span>
 
-         <span class="productcard" id="targetcard" onclick="toggleExpand">
+         <span class="productcard" id="targetcard" onclick="expandProduct()">
             <img class="productimg" src="/images/Morgenstern.jpg">
             <span class="card-text">
                <h2 class="cardbooktitle">The Starless Sea</h2>
                <h3 class="cardauthor">Erin Morgenstern</h3>
                <h4 class="cardprice">$22.99</h4>
-               <button class="cart-button">Add to Cart</button>
+               <button id="add-cart"  class="cart-button" onclick="addToCart()">Add to Cart</button>
                <p class="product-discription">
                   When Zachary Rawlins stumbles across a strange book hidden in his university library it leads him on a quest unlike any other.
                </p>
             </span>
-            <img class="product-close-icon" src="/images/CloseIcon.svg">
+            <button class="close-product" onclick="collapseProduct(event)"></button>
 
          </span>
 
@@ -115,5 +120,6 @@
     </div>
    <script src="productcard.js"></script>
    <script src="hamburger.js"></script>
+   <script src="/cartpopup.js"></script>
 </body>
 </html>

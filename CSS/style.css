@@ -154,6 +154,8 @@ h1 {
     height: 2rem;
     width: 2rem;
     min-width: 2rem;
+    background-color: #FFF;
+    border: none;
 }
 
 @media (max-width: 850px) {

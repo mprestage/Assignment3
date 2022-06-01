@@ -289,7 +289,7 @@ header {
 
 .cart-totals {
     position: absolute;
-    top: 14rem;
+    bottom: 29rem;
     right: 4rem;
 }
 
@@ -304,7 +304,7 @@ td{
     padding-right: 2.6rem;
     position: absolute;
     right: 4rem;
-    top: 22.5rem;
+    bottom: 25.5rem;
 }
 
 .back-btn{
@@ -314,7 +314,7 @@ td{
     padding-right: 1rem;
     position: absolute;
     right: 15rem;
-    top: 22.5rem;
+    bottom: 25.5rem;
 }
 
 
@@ -355,7 +355,7 @@ label.postcode{
     padding-right: 2.6rem;
     position: absolute;
     right: 4.2rem;
-    top: 22.5rem;
+    bottom: 25.5rem;
     cursor: pointer;
 }
 
@@ -398,7 +398,7 @@ label.postcode{
     padding-right: 2.6rem;
     position: absolute;
     right: 4.2rem;
-    top: 30rem;
+    bottom: 25.5rem;
     cursor: pointer;
 }
 
@@ -409,7 +409,7 @@ label.postcode{
     padding-right: 3.7rem;
     position: absolute;
     right: 15rem;
-    top: 30rem;
+    bottom: 25.5rem;
 }
 
 select {
@@ -506,8 +506,206 @@ label.ccv {
      #nav-wrapper.expand {
          display:flex;
          position: absolute;
-         top: 15%;
+         top: 14%;
          flex-direction: column;
          z-index: 10;
+         padding-top: 0.5rem;
      }
+
+     .searchbox {
+         margin: 0.5rem;
+     }
+
+     .productcard.expand {
+        width: 23rem;
+        height: 18rem;
+        flex-direction: row;
+        transition: all 2000ms linear;
+        margin: 1rem;
+    }
+
+    .productcard.expand > .card-text > .cart-button {
+        padding: 0.5rem;
+        bottom: 8rem;
+        left: 10rem;
+    }
+
+    .productcard.expand > .product-close-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .productcard.expand > .card-text {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .productcard.expand > .card-text > .cardbooktitle {
+        padding: 0;
+    }
+
+    .productcard.expand > .card-text > .cardauthor {
+        padding: 0;
+    }
+
+    .productcard.expand > .card-text > .cardprice {
+        bottom: 9.5rem;
+        left: 10rem;
+    }
+    
+    .productcard.expand > .card-text > .product-discription {
+        left: 10rem;
+        padding-right: 0rem;
+        bottom: 0rem;
+    }
+
+    .productcard.expand > .productimg {
+        width: 36%;
+        height: 68%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .cart {
+        padding-top: 0rem;
+    }
+
+    .cartproductimg {
+        width: 37%;
+        height: 76%;
+        margin-left: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .cartcard {
+        width: 22.5rem;
+        height: 17rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        right: -0.9rem;
+    }
+
+    .cart-info {
+        padding-top: 1rem;
+    }
+
+    .cart-cardbooktitle {
+        padding-left: 0rem;
+    }
+
+    .cart-cardprice {
+        padding-top: 2rem;
+    }
+
+    .cart-qty {
+        margin: 0;
+    }
+
+    .qty-amount {
+    margin-top: 0.5rem;
+    }
+
+    .close-icon {
+        width: 1rem;
+        height: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cart-totals {
+        bottom: 5rem;
+        right: 1.7rem;
+    }
+
+    .checkout-btn {
+        right: 2rem;
+        bottom: 1.5rem;
+    }
+
+    .back-btn {
+        right: 13rem;
+        bottom: 1.5rem;
+    }
+
+
+
+    .checkout-form {
+        padding-top: 0rem;
+    }
+
+
+    h2 {
+        padding-top: 0rem;
+    }
+
+    .delivery-details {
+        left: 1.8rem;
+        top: 11.5rem;
+    }
+    
+    #name {
+        width: 80%;
+    }
+    
+    #address1 {
+        width: 80%;
+    }
+    
+    #address2 {
+        width: 80%;
+    }
+
+    .delivery-details > input {
+        width: 33%;
+        margin-bottom: 0.7rem;
+    }
+
+    label.state {
+        padding-left: 4.7rem;
+    }
+
+    label.postcode {
+        padding-left: 7.1rem;
+    }
+
+    .progress-btn {
+        right: 1.8rem;
+        bottom: 1.5rem;
+    }
+
+
+    .shipping-type {
+        padding-left: 1.8rem;
+        padding-top: 0rem;
+    }
+
+    .payment-btn {
+        right: 2rem;
+        bottom: 1.5rem;
+    }
+
+    .back-btn2 {
+        right: 13rem;
+        bottom: 1.5rem;
+    }
+
+    .payment-form {
+        left: 1.8rem;
+        top: 11.5rem;
+    }
+
+    #card-name {
+        width: 80%;
+    }
+
+    .payment-form > input {
+        width: 33%;
+        margin-bottom: 0.7rem;
+    }
+
+    label.ccv {
+        padding-left: 7.8rem;
+    }
+
 }

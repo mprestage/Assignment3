@@ -22,7 +22,11 @@ header {
 .hamburger {
     background-image: url(/images/HamburgerIcon.svg);
     background-size: cover;
+    background-color: white;
+    border: none;
 }
+
+
 
 .searchbox {
     background-color: var(--secondary);
@@ -317,6 +321,12 @@ select:focus-visible {
     h1 {
         font-size: 20pt;
     }
+
+    #nav-wrapper.expand {
+        background-color: white;
+    }
+
+
 
 
 }

@@ -14,19 +14,22 @@
 </head>
 <body>
     <header>
+        <button class="hamburger" onclick="toggleNav()"></button>
         <a href="/index.html"><img class="logo" src="/images/PowellsRedLogo.svg" alt="Powell's Logo" width="199" height="63"></a>
-        <div class="searchbox">
-            <input class="searchinput" type="text" placeholder="">
-            <img class="searchicon" src="/images/SearchIcon.svg">
+        <div id="nav-wrapper">
+            <div class="searchbox">
+                <input class="searchinput" type="text" placeholder="">
+                <img class="searchicon" src="/images/SearchIcon.svg">
+            </div>
+            <nav class="mainmenu">
+                <ul>
+                    <li>Browse</li>
+                    <li>Contact</li>
+                    <li>Booklists</li>
+                    <li class="selected-page">Cart</li>
+                </ul>
+            </nav>
         </div>
-        <nav class="mainmenu">
-            <ul>
-                <li>Browse</li>
-                <li>Contact</li>
-                <li>Booklists</li>
-                <li class="selected-page">Cart</li>
-            </ul>
-        </nav>
     </header>  
     
     <div class="cart"> 
@@ -60,5 +63,6 @@
             <a href="/checkout1.html" class="checkout-btn">Checkout</a>
         </span>
     </div>
+    <script src="hamburger.js"></script>
 </body>
 </html>

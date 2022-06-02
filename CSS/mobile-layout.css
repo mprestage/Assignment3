@@ -105,13 +105,12 @@
     .productcard.expand {
         width: 23rem;
         flex-direction: row;
-        transition: all 2000ms linear;
+        transition: width 2000ms cubic-bezier(0, 0, 0.17, 1);
         margin: 1rem;
     }
 
     .productcard.expand > .card-text > .cart-button {
         padding: 0.5rem;
-        bottom: 8rem;
         left: 10rem;
     }
 
@@ -134,14 +133,15 @@
     }
 
     .productcard.expand > .card-text > .cardprice {
-        bottom: 10rem;
-        left: 10rem;
+        left: 10.2rem;
+        top: 4rem;
     }
     
-    .productcard.expand > .card-text > .product-discription {
+    .productcard.expand > .card-text > .product-description {
         left: 10rem;
-        padding-right: 0rem;
-        bottom: 0rem;
+        padding-right: 0.5rem;
+        top: 11rem;
+        height: 35%;
     }
 
     .productcard.expand > .productimg {

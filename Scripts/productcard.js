@@ -13,4 +13,5 @@ function expandProduct() {
     if  (productcard.classList.contains('expand')) {
         productcard.classList.remove('expand')
     }
+
   }

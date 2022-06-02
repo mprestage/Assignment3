@@ -1,0 +1,321 @@
+/* media queries */
+
+@media (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .landingheader {
+        background-color: #FFF;
+        width: 100%;
+        height: 14vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    header {
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header > a {
+        height: 120px;
+    }
+
+    #nav-wrapper {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2.5rem;
+    }
+
+
+    body {
+        flex-direction: column;
+    }
+
+    .productgrid {
+        padding-top: 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+
+    .breadcrumb {
+        padding-top: 1rem;
+    }
+    
+    .productcard{
+         margin-right: 0rem;
+        }
+
+    h1 {
+         padding-left: 1.8rem;
+         padding-right: 1rem;
+     }   
+
+     #nav-wrapper.expand {
+         display:flex;
+         position: absolute;
+         top: 120px;
+         flex-direction: column;
+         z-index: 10;
+         padding-top: 0.5rem;
+     }
+
+    .searchbox {
+         margin: 0.5rem;
+     }
+
+
+    #cart-notification {
+        visibility: hidden;
+        height: 0;
+        width: 100%;
+        transition: height 1000ms ease-in-out, visibility 0ms 1000ms;
+        overflow: hidden;
+    }
+    
+    #cart-notification > p {
+        max-height: 100%;
+        line-height: 100%;
+        text-align: center;
+        padding:0.2rem;
+        margin: 0.2rem;
+    }
+    
+    #cart-notification.visible {
+        visibility: visible;
+        height: 26px;
+        width: 100%;
+        transition: height 1000ms ease-in-out, visibility 0ms 0ms;
+    
+    }
+
+    .productcard.expand {
+        width: 23rem;
+        flex-direction: row;
+        transition: all 2000ms linear;
+        margin: 1rem;
+    }
+
+    .productcard.expand > .card-text > .cart-button {
+        padding: 0.5rem;
+        bottom: 8rem;
+        left: 10rem;
+    }
+
+    .productcard.expand > .close-product {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .productcard.expand > .card-text {
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+
+    .productcard.expand > .card-text > .cardbooktitle {
+        padding: 0;
+    }
+
+    .productcard.expand > .card-text > .cardauthor {
+        padding: 0;
+    }
+
+    .productcard.expand > .card-text > .cardprice {
+        bottom: 10rem;
+        left: 10rem;
+    }
+    
+    .productcard.expand > .card-text > .product-discription {
+        left: 10rem;
+        padding-right: 0rem;
+        bottom: 0rem;
+    }
+
+    .productcard.expand > .productimg {
+        width: 36%;
+        height: 68%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .cart {
+        padding-top: 0rem;
+    }
+
+    .cartproductimg {
+        width: 37%;
+        height: 76%;
+        margin-left: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .cartcard {
+        width: 22.5rem;
+        height: 17rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        right: -0.9rem;
+    }
+
+    .cart-info {
+        padding-top: 1rem;
+    }
+
+    .cart-cardbooktitle {
+        padding-left: 0rem;
+    }
+
+    .cart-cardprice {
+        padding-top: 2rem;
+    }
+
+    .cart-qty {
+        margin: 0;
+    }
+
+    .qty-amount {
+    margin-top: 0.5rem;
+    }
+
+    .close-icon {
+        width: 1rem;
+        height: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cart-totals {
+        bottom: 5rem;
+        right: 1.7rem;
+    }
+
+    .cart-totals-ship {
+        bottom: 5rem;
+        right: 1.7rem;
+    }
+
+    .cart-totals-confirm {
+        bottom: 5rem;
+        right: 1.7rem;
+    }
+
+    .checkout-btn {
+        right: 2rem;
+        bottom: 1.5rem;
+    }
+
+    .back-btn {
+        right: 13rem;
+        bottom: 1.5rem;
+    }
+
+
+
+    .checkout-form {
+        padding-top: 0rem;
+    }
+
+
+    h2 {
+        padding-top: 0rem;
+    }
+
+
+    .delivery-details {
+        left: 1.8rem;
+        top: 11.5rem;
+    }
+    
+    #name {
+        width: 80%;
+    }
+    
+    #address1 {
+        width: 80%;
+    }
+    
+    #address2 {
+        width: 80%;
+    }
+
+    .delivery-details > input {
+        width: 33%;
+        margin-bottom: 0.5rem;
+    }
+
+    label.state {
+        padding-left: 4.7rem;
+    }
+
+    label.postcode {
+        padding-left: 7.1rem;
+    }
+
+    .progress-btn {
+        right: 1.8rem;
+        bottom: 1.5rem;
+    }
+
+
+    .shipping-type {
+        padding-left: 1.8rem;
+        padding-top: 0rem;
+        position: relative;
+        top: -1rem;
+    }
+
+    .payment-btn {
+        right: 2rem;
+        bottom: 1.5rem;
+    }
+
+    .back-btn2 {
+        right: 13rem;
+        bottom: 1.5rem;
+    }
+
+    .payment-form {
+        left: 1.8rem;
+        top: 11.5rem;
+    }
+
+    #card-name {
+        width: 80%;
+    }
+
+    .payment-form > input {
+        width: 33%;
+        margin-bottom: 0.7rem;
+    }
+
+    label.ccv {
+        padding-left: 7.8rem;
+    }
+
+    .back-btn3 {
+        right: 2rem;
+        bottom: 1.5rem;
+        padding-left: 6.2rem;
+        padding-right: 6.2rem;
+
+    }
+
+    .confirm-text {
+        padding-left: 6rem;
+    }
+
+}

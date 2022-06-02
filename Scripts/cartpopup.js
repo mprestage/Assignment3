@@ -8,13 +8,16 @@ function hidePopup() {
 }
 
 function addToCart() {
-    // if  (!cartbutton.classList.contains('used')) {
-    //     cartbutton.classList.add('used')
-    // }
+    if  (!cartbutton.classList.contains('used')) {
+        cartbutton.classList.add('used')
+    }
 
     if  (!popup.classList.contains('visible')) {
         popup.classList.add('visible')
     }
-    setTimeout(hidePopup,5000)
+    setTimeout(hidePopup,3000)
+
+    document.getElementById("add-cart").childNodes[0].nodeValue=
+    "Added to Cart";
   }
 

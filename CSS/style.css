@@ -57,13 +57,15 @@ h1 {
 }
 
 .bookBtnLrg{
-    width: 429px;
+    aspect-ratio: 6.5;
+
     height:66px;
     border: none;
 }
 
 .bookBtnSml{
-    width: 319px;
+    aspect-ratio: 6.38;
+
     height: 50px;
     border: none;
 }
@@ -181,6 +183,18 @@ h1 {
         padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 2.5rem;
+    }
+
+    .homemenu {
+        padding-top: 2rem;
+    }
+    
+    .bookBtnLrg{
+        height: 55px;
+    }
+    
+    .bookBtnSml{
+        height: 45px;
     }
 
 

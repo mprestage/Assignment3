@@ -1,0 +1,13 @@
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 20pt;
+    }
+
+    #nav-wrapper.expand {
+        background-color: white;
+    }
+
+
+
+
+}

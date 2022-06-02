@@ -14,6 +14,10 @@ header {
     align-items: center;
 }
 
+h1 {
+    padding-right: 1rem;
+}
+
 .hamburger {
     display: none;
     height: 2rem;
@@ -73,6 +77,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: flex-start;
     }
 
 .productcard {
@@ -83,15 +88,19 @@ header {
     align-items: center;
     position: relative;
     margin-right: 1rem;
-    transition: all 500ms linear;
+    transition: width 3000ms cubic-bezier(0, 0, 0.17, 1);
     order: 2;
     border-radius: 24px;
 }
 
 
+
 .productimg {
-    width: 70%;
+    aspect-ratio: 0.65;
+    /* width: 70%; */
     height: 57%;
+    max-width: 210px;
+    min-width: 50px;
     border-radius: 12px;
     margin-top: 10%;
 }
@@ -125,23 +134,23 @@ header {
 }
 
 .cart-button {
-    opacity: 0%;
-    scale: 0%;
+    visibility: hidden;
+    display: none;
 }
 
 .product-discription {
-    opacity: 0%;
-    scale: 0%;
+    visibility: hidden;
+    display: none;
 }
 
 .close-product {
-    opacity: 0%;
-    scale: 0%;
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
+    visibility: hidden;
+    display: none;
 }
 
 .productcard:hover {
@@ -154,13 +163,11 @@ header {
 
 .productcard.expand {
     width: 96%;
-    height: 30%;
     flex-direction: row;
-    transition: all 500ms linear;
 }
 
 .productcard.expand > .productimg {
-    width: 19%;
+    /* width: 19%; */
     height: 88%;
     border-radius: 12px;
     margin-top: 1.2rem;
@@ -201,43 +208,51 @@ header {
 }
 
 .productcard.expand > .card-text > .cart-button {
-    opacity: 100%;
-    scale: 100%;
     padding: 0.5rem;
     position: absolute;
     bottom: 8rem;
     left: 15.5rem;
+    visibility: visible;
+    transition: visibility 0ms 530ms;
+    display: block;
 }
 
 .productcard.expand > .card-text > .product-discription {
-    opacity: 100%;
-    scale: 100%;
     position: absolute;
     bottom: 3rem;
     left: 15.5rem;
     padding-right: 2rem;
+    visibility: visible;
+    transition: visibility 0ms 530ms;
+    display: block;
 }
 
 .productcard.expand > .close-product {
-    opacity: 100%;
-    scale: 100%;
+    visibility: visible;
+    transition: visibility 0ms 530ms;
+    display: block;
 }
 
 #cart-notification {
     visibility: hidden;
     height: 0;
-    transition: height 1000ms ease-in-out;
+    width: 90%;
+    transition: height 1000ms ease-in-out, visibility 0ms 1000ms;
+    overflow: hidden;
 }
 
 #cart-notification > p {
     max-height: 100%;
     line-height: 100%;
+    text-align: center;
 }
 
 #cart-notification.visible {
     visibility: visible;
     height: 40px;
     width: 90%;
+    transition: height 1000ms ease-in-out, visibility 0ms 0ms;
+
 }
 
 
@@ -317,10 +332,12 @@ header {
 
 .cart-totals {
     position: absolute;
-    bottom: 29rem;
+    bottom: 35rem;
     right: 4rem;
     width: 21rem;
 }
+
+
 
 td{
     padding: 1rem;
@@ -333,7 +350,7 @@ td{
     padding-right: 2.6rem;
     position: absolute;
     right: 4rem;
-    bottom: 25.5rem;
+    bottom: 31.5rem;
 }
 
 .back-btn{
@@ -343,7 +360,7 @@ td{
     padding-right: 1rem;
     position: absolute;
     right: 15rem;
-    bottom: 25.5rem;
+    bottom: 31.5rem
 }
 
 
@@ -384,7 +401,7 @@ label.postcode{
     padding-right: 2.6rem;
     position: absolute;
     right: 4.2rem;
-    bottom: 25.5rem;
+    bottom: 31.5rem;
     cursor: pointer;
 }
 
@@ -408,17 +425,29 @@ label.postcode{
     width: 90%;
 }
 
+.cart-totals-ship {
+    position: absolute;
+    bottom: 27.5rem;
+    right: 4rem;
+    width: 21rem;
+}
+
+.cart-totals-confirm {
+    position: absolute;
+    bottom: 29.5rem;
+    right: 4rem;
+    width: 21rem;
+}
+
+.cart-totals-confirm > table {
+    padding-left: 2rem;
+}
+
 .shipping-type > input {
     padding: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
-
-.shipping-type {
-    padding-left: 0.5rem;
-    padding-top: 0.4rem;
-}
-
 
 .payment-btn {
     padding-top: 0.7rem;
@@ -427,7 +456,7 @@ label.postcode{
     padding-right: 2.6rem;
     position: absolute;
     right: 4.2rem;
-    bottom: 25.5rem;
+    bottom: 24rem;
     cursor: pointer;
 }
 
@@ -438,7 +467,7 @@ label.postcode{
     padding-right: 3.7rem;
     position: absolute;
     right: 15rem;
-    bottom: 25.5rem;
+    bottom: 24rem;
 }
 
 select {
@@ -456,7 +485,6 @@ option {
 
 .payment-form {
     position: absolute;
-    left: 18rem;
     top: 14rem;
 }
 
@@ -477,9 +505,9 @@ label.ccv {
 
 .back-btn3 {
     padding-top: 0.7rem;
-    padding-left: 4.2rem;
+    padding-left: 6.5rem;
     padding-bottom: 0.7rem;
-    padding-right: 4.2rem;
+    padding-right: 6.5rem;
     position: absolute;
     right: 4rem;
     bottom: 25.5rem;
@@ -497,276 +525,3 @@ label.ccv {
 
 
 
-/* media queries */
-
-@media (max-width: 850px) {
-    .hamburger {
-        display: block;
-        margin-left: 1rem;
-    }
-
-    .landingheader {
-        background-color: #FFF;
-        width: 100%;
-        height: 14vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    header {
-        height: 14vh;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #nav-wrapper {
-        display: none;
-    }
-
-    .logo {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 2.5rem;
-    }
-
-
-    body {
-        flex-direction: column;
-    }
-
-    .productgrid {
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        }
-    
-    .productcard{
-         margin-right: 0rem;
-        }
-
-     h1 {
-         padding-left: 1.8rem;
-     }   
-
-     #nav-wrapper.expand {
-         display:flex;
-         position: absolute;
-         top: 14%;
-         flex-direction: column;
-         z-index: 10;
-         padding-top: 0.5rem;
-     }
-
-     .searchbox {
-         margin: 0.5rem;
-     }
-
-     .productcard.expand {
-        width: 23rem;
-        height: 18rem;
-        flex-direction: row;
-        transition: all 2000ms linear;
-        margin: 1rem;
-    }
-
-    .productcard.expand > .card-text > .cart-button {
-        padding: 0.5rem;
-        bottom: 8rem;
-        left: 10rem;
-    }
-
-    .productcard.expand > .product-close-icon {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .productcard.expand > .card-text {
-        padding-left: 0;
-        padding-top: 2rem;
-    }
-
-    .productcard.expand > .card-text > .cardbooktitle {
-        padding: 0;
-    }
-
-    .productcard.expand > .card-text > .cardauthor {
-        padding: 0;
-    }
-
-    .productcard.expand > .card-text > .cardprice {
-        bottom: 9.5rem;
-        left: 10rem;
-    }
-    
-    .productcard.expand > .card-text > .product-discription {
-        left: 10rem;
-        padding-right: 0rem;
-        bottom: 0rem;
-    }
-
-    .productcard.expand > .productimg {
-        width: 36%;
-        height: 68%;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-
-    .cart {
-        padding-top: 0rem;
-    }
-
-    .cartproductimg {
-        width: 37%;
-        height: 76%;
-        margin-left: 1rem;
-        margin-right: 1.5rem;
-    }
-
-    .cartcard {
-        width: 22.5rem;
-        height: 17rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        right: -0.9rem;
-    }
-
-    .cart-info {
-        padding-top: 1rem;
-    }
-
-    .cart-cardbooktitle {
-        padding-left: 0rem;
-    }
-
-    .cart-cardprice {
-        padding-top: 2rem;
-    }
-
-    .cart-qty {
-        margin: 0;
-    }
-
-    .qty-amount {
-    margin-top: 0.5rem;
-    }
-
-    .close-icon {
-        width: 1rem;
-        height: 1rem;
-        padding-right: 1rem;
-    }
-
-    .cart-totals {
-        bottom: 5rem;
-        right: 1.7rem;
-    }
-
-    .checkout-btn {
-        right: 2rem;
-        bottom: 1.5rem;
-    }
-
-    .back-btn {
-        right: 13rem;
-        bottom: 1.5rem;
-    }
-
-
-
-    .checkout-form {
-        padding-top: 0rem;
-    }
-
-
-    h2 {
-        padding-top: 0rem;
-    }
-
-    .delivery-details {
-        left: 1.8rem;
-        top: 11.5rem;
-    }
-    
-    #name {
-        width: 80%;
-    }
-    
-    #address1 {
-        width: 80%;
-    }
-    
-    #address2 {
-        width: 80%;
-    }
-
-    .delivery-details > input {
-        width: 33%;
-        margin-bottom: 0.7rem;
-    }
-
-    label.state {
-        padding-left: 4.7rem;
-    }
-
-    label.postcode {
-        padding-left: 7.1rem;
-    }
-
-    .progress-btn {
-        right: 1.8rem;
-        bottom: 1.5rem;
-    }
-
-
-    .shipping-type {
-        padding-left: 1.8rem;
-        padding-top: 0rem;
-    }
-
-    .payment-btn {
-        right: 2rem;
-        bottom: 1.5rem;
-    }
-
-    .back-btn2 {
-        right: 13rem;
-        bottom: 1.5rem;
-    }
-
-    .payment-form {
-        left: 1.8rem;
-        top: 11.5rem;
-    }
-
-    #card-name {
-        width: 80%;
-    }
-
-    .payment-form > input {
-        width: 33%;
-        margin-bottom: 0.7rem;
-    }
-
-    label.ccv {
-        padding-left: 7.8rem;
-    }
-
-    .back-btn3 {
-        right: 2rem;
-        bottom: 1.5rem;
-        padding-left: 6.2rem;
-        padding-right: 6.2rem;
-
-    }
-
-    .confirm-text {
-        padding-left: 6rem;
-    }
-
-}

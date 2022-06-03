@@ -151,7 +151,7 @@ p {
 }
 
 #cart-notification {
-    background-color: var(--tertiary);
+    background-color: var(--secondary-dark);
 }
 
 #cart-notification > p {
@@ -240,6 +240,10 @@ table{
     text-decoration: none;
 }
 
+.checkout-btn:hover {
+    background-color: var(--primary-dark);
+}
+
 .back-btn {
     font-family: var(--primary-font);
     font-size: 14pt;
@@ -250,6 +254,11 @@ table{
     outline: none;
     border: none;
     text-decoration: none;
+}
+
+.back-btn:hover{
+    background-color: var(--tertiary);
+    color: var(--primary-dark);
 }
 
 tr {
@@ -295,6 +304,10 @@ h2 {
     text-decoration: none;
 }
 
+.progress-btn:hover {
+    background-color: var(--primary-dark);
+}
+
 .back-btn1 {
     font-family: var(--primary-font);
     font-size: 14pt;
@@ -305,6 +318,11 @@ h2 {
     outline: none;
     border: none;
     text-decoration: none;
+}
+
+.back-btn1:hover{
+    background-color: var(--tertiary);
+    color: var(--primary-dark);
 }
 
 
@@ -334,6 +352,10 @@ h2 {
     text-decoration: none;
 }
 
+.payment-btn:hover {
+    background-color: var(--primary-dark);
+}
+
 .back-btn2 {
     font-family: var(--primary-font);
     font-size: 14pt;
@@ -344,6 +366,11 @@ h2 {
     outline: none;
     border: none;
     text-decoration: none;
+}
+
+.back-btn2:hover{
+    background-color: var(--tertiary);
+    color: var(--primary-dark);
 }
 
 select {
@@ -380,6 +407,10 @@ select:focus-visible {
     text-decoration: none;
 }
 
+.confirm-btn:hover {
+    background-color: var(--primary-dark);
+}
+
 .cart-totals-pay {
     background-color: var(--tertiary);
     box-shadow: inset 0px 0px 5px #846d50;
@@ -398,6 +429,11 @@ select:focus-visible {
     text-decoration: none;
 }
 
+.back-btn3:hover{
+    background-color: var(--tertiary);
+    color: var(--primary-dark);
+}
+
 .back-btn4 {
     font-family: var(--primary-font);
     font-size: 14pt;
@@ -408,6 +444,10 @@ select:focus-visible {
     outline: none;
     border: none;
     text-decoration: none;
+}
+
+.back-btn4:hover {
+    background-color: var(--primary-dark);
 }
 
 .confirm-text {

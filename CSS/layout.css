@@ -97,7 +97,6 @@ h1 {
 
 .productimg {
     aspect-ratio: 0.65;
-    /* width: 70%; */
     height: 57%;
     max-width: 210px;
     min-width: 50px;
@@ -175,7 +174,6 @@ h1 {
 }
 
 .productcard.expand > .productimg {
-    /* width: 19%; */
     height: 88%;
     border-radius: 12px;
     margin-top: 1.2rem;
@@ -262,7 +260,14 @@ h1 {
     height: 40px;
     width: 90%;
     transition: height 1000ms ease-in-out, visibility 0ms 0ms;
+}
 
+.page-turn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
 }
 
 
@@ -363,7 +368,7 @@ td{
     bottom: 15.5rem;
 }
 
-.cart > .back-btn{
+.back-btn{
     padding-top: 0.7rem;
     padding-left: 1rem;
     padding-bottom: 0.7rem;
@@ -440,9 +445,9 @@ label.postcode{
 
 .back-btn1 {
     padding-top: 0.7rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-bottom: 0.7rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     position: relative;
     left: 46rem;
     bottom: 28.2rem
@@ -538,7 +543,7 @@ label.ccv {
     padding-right: 2.6rem;
     position: relative;
     left: 47rem;
-    bottom: 11rem;
+    bottom: 10.8rem;
     cursor: pointer;
 }
 
@@ -549,7 +554,7 @@ label.ccv {
     padding-right: 3.7rem;
     position: relative;
     left: 46rem;
-    bottom: 11rem;
+    bottom: 10.8rem;
 }
 
 .back-btn4 {

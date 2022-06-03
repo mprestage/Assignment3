@@ -169,6 +169,7 @@ h1 {
 
 .productcard.expand {
     width: 96%;
+    max-width: 1020px;
     flex-direction: row;
     transition: width 3000ms cubic-bezier(0, 0, 0.17, 1);
 }
@@ -340,9 +341,9 @@ h1 {
 }
 
 .cart-totals {
-    position: absolute;
-    bottom: 35rem;
-    right: 4rem;
+    position: relative;
+    bottom: 17rem;
+    left: 46rem;
     width: 21rem;
 }
 
@@ -357,19 +358,19 @@ td{
     padding-left: 2.6rem;
     padding-bottom: 0.7rem;
     padding-right: 2.6rem;
-    position: absolute;
-    right: 4rem;
-    bottom: 31.5rem;
+    position: relative;
+    left: 46.8rem;
+    bottom: 15.5rem;
 }
 
-.back-btn{
+.cart > .back-btn{
     padding-top: 0.7rem;
     padding-left: 1rem;
     padding-bottom: 0.7rem;
     padding-right: 1rem;
-    position: absolute;
-    right: 15rem;
-    bottom: 31.5rem
+    position: relative;
+    left: 46rem;
+    bottom: 15.5rem
 }
 
 
@@ -393,11 +394,6 @@ label.postcode{
 
 }
 
-.delivery-details {
-    position: absolute;
-    left: 18rem;
-    top: 14rem;
-}
 
 .checkout-info {
     position: relative;
@@ -408,9 +404,9 @@ label.postcode{
     padding-left: 2.6rem;
     padding-bottom: 0.7rem;
     padding-right: 2.6rem;
-    position: absolute;
-    right: 4.2rem;
-    bottom: 31.5rem;
+    position: relative;
+    left: 47rem;
+    bottom: 28.2rem;
     cursor: pointer;
 }
 
@@ -423,28 +419,46 @@ label.postcode{
 }
 
 #name {
-    width: 90%;
+    width: 28rem;
 }
 
 #address1 {
-    width: 90%;
+    width: 28rem;
 }
 
 #address2 {
-    width: 90%;
+    width: 28rem;
+}
+
+
+.checkout-form > .cart-totals {
+    position: relative;
+    bottom: 29rem;
+    left: 46rem;
+    width: 21rem;
+}
+
+.back-btn1 {
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1rem;
+    position: relative;
+    left: 46rem;
+    bottom: 28.2rem
 }
 
 .cart-totals-ship {
-    position: absolute;
-    bottom: 27.5rem;
-    right: 4rem;
+    position: relative;
+    bottom: 4.9rem;
+    left: 46rem;
     width: 21rem;
 }
 
 .cart-totals-confirm {
-    position: absolute;
-    bottom: 29.5rem;
-    right: 4rem;
+    position: relative;
+    bottom: 17rem;
+    left: 46rem;
     width: 21rem;
 }
 
@@ -463,9 +477,9 @@ label.postcode{
     padding-left: 2.6rem;
     padding-bottom: 0.7rem;
     padding-right: 2.6rem;
-    position: absolute;
-    right: 4.2rem;
-    bottom: 24rem;
+    position: relative;
+    left: 47rem;
+    bottom: 4rem;
     cursor: pointer;
 }
 
@@ -474,9 +488,9 @@ label.postcode{
     padding-left: 3.7rem;
     padding-bottom: 0.7rem;
     padding-right: 3.7rem;
-    position: absolute;
-    right: 15rem;
-    bottom: 24rem;
+    position: relative;
+    left: 46rem;
+    bottom: 4rem;
 }
 
 select {
@@ -492,34 +506,60 @@ option {
     padding-top: 2px;
 }
 
-.payment-form {
-    position: absolute;
-    top: 14rem;
-}
-
 .payment-form > input {
     padding: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+}
+
+#expiry {
     margin-right: 1rem;
 }
 
 #card-name {
-    width: 90%;
+    width: 28rem;
 }
 
 label.ccv {
     padding-left: 12.5rem;
 }
 
+.cart-totals-pay {
+    position: relative;
+    bottom: 11.7rem;
+    left: 46rem;
+    width: 21rem;
+}
+
+.confirm-btn {
+    padding-top: 0.7rem;
+    padding-left: 2.6rem;
+    padding-bottom: 0.7rem;
+    padding-right: 2.6rem;
+    position: relative;
+    left: 47rem;
+    bottom: 11rem;
+    cursor: pointer;
+}
+
 .back-btn3 {
+    padding-top: 0.7rem;
+    padding-left: 3.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 3.7rem;
+    position: relative;
+    left: 46rem;
+    bottom: 11rem;
+}
+
+.back-btn4 {
     padding-top: 0.7rem;
     padding-left: 6.5rem;
     padding-bottom: 0.7rem;
     padding-right: 6.5rem;
-    position: absolute;
-    right: 4rem;
-    bottom: 25.5rem;
+    position: relative;
+    left: 46rem;
+    bottom: 15.5rem;
     cursor: pointer;
 }
 
@@ -527,7 +567,7 @@ label.ccv {
 .confirm-text {
     position: relative;
     bottom: 1rem;
-    padding-left: 4rem;
+    padding-left: 6rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }

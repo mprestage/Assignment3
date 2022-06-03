@@ -199,28 +199,31 @@
     }
 
     .cart-totals {
-        bottom: 5rem;
-        right: 1.7rem;
+        bottom: -1rem;
+        left: 1rem;
+        width: 22rem;
     }
 
     .cart-totals-ship {
-        bottom: 5rem;
-        right: 1.7rem;
+        bottom: 0rem;
+        left: 1.5rem;
+        width: 20.5rem;
     }
 
     .cart-totals-confirm {
-        bottom: 5rem;
-        right: 1.7rem;
+        bottom: -1rem;
+        right: 1.1rem;
+        width: 22rem;
     }
 
     .checkout-btn {
-        right: 2rem;
-        bottom: 1.5rem;
+        left: 2.5rem;
+        bottom: -2.5rem;
     }
 
     .back-btn {
-        right: 13rem;
-        bottom: 1.5rem;
+        left: 1rem;
+        bottom: -2.5rem;
     }
 
 
@@ -236,6 +239,7 @@
 
 
     .delivery-details {
+        position: absolute;
         left: 1.8rem;
         top: 11.5rem;
     }
@@ -265,9 +269,22 @@
         padding-left: 7.1rem;
     }
 
+    .checkout-form > .cart-totals {
+
+        bottom: -26rem;
+        left: 1.5rem;
+        width: 20.5rem;
+    }
+
+    .back-btn1 {
+        left: 1.5rem;
+        bottom: -27rem;
+    }
+
+
     .progress-btn {
-        right: 1.8rem;
-        bottom: 1.5rem;
+        left: 2rem;
+        bottom: -27rem;
     }
 
 
@@ -279,43 +296,57 @@
     }
 
     .payment-btn {
-        right: 2rem;
-        bottom: 1.5rem;
+        left: 2rem;
+        bottom: -1rem;
     }
 
     .back-btn2 {
-        right: 13rem;
-        bottom: 1.5rem;
+        left: 1.5rem;
+        bottom: -1rem;
     }
 
     .payment-form {
-        left: 1.8rem;
-        top: 11.5rem;
+        position: relative;
+        left: 1.5rem;
     }
 
     #card-name {
-        width: 80%;
+        width: 19.5rem;
     }
 
     .payment-form > input {
-        width: 33%;
+        width: 37%;
         margin-bottom: 0.7rem;
     }
 
     label.ccv {
-        padding-left: 7.8rem;
+        padding-left: 8.5rem;
+    }
+
+    .cart-totals-pay {
+        position: relative;
+        bottom: -0.3rem;
+        left: 1.25rem;
+        width: 21.5rem;
     }
 
     .back-btn3 {
-        right: 2rem;
-        bottom: 1.5rem;
+        left: 1.3rem;
+        bottom: -1.3rem;
+    }
+
+    .confirm-btn {
+        left: 3rem;
+        bottom: -1.3rem;
+    }
+
+    .back-btn4 {
+        left: 2rem;
+        bottom: -2.5rem;
         padding-left: 6.2rem;
         padding-right: 6.2rem;
 
     }
 
-    .confirm-text {
-        padding-left: 6rem;
-    }
 
 }
